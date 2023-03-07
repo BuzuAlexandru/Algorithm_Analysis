@@ -6,7 +6,7 @@ from numpy.linalg import matrix_power
 
 # l1 = [5, 7, 10, 12, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
 l1 = [5, 7, 10, 12, 15, 17, 20, 22, 25, 27, 30, 32, 33, 35, 37, 39, 40]
-l2 = [521, 643, 788, 1000, 1265, 1576, 2000, 2517, 3000, 4000, 5000, 6300, 7950, 10000, 12500, 15850]
+l2 = [521, 643, 788, 1000, 1265, 1576, 2000, 2517, 3000, 4000, 5000, 6300, 7950, 10000, 12500, 158500]
 r1 = []
 r2 = []
 
@@ -44,9 +44,7 @@ def fib3_iterative(n):
 def fib4_optimized_dp(n):
     a = 0
     b = 1
-    if n < 0:
-        print("Incorrect input")
-    elif n == 0:
+    if n == 0:
         return a
     elif n == 1:
         return b
@@ -125,12 +123,12 @@ print('\n'.join([''.join(['{:11}'.format(item) for item in row])
       for row in r2]))
 
 # plt.plot(l1, r1[0], label='Recursive')
-plt.plot(l1, r1[0], label='DP')
-plt.plot(l1, r1[1], label='Iterative')
-plt.plot(l1, r1[2], label='Optimized DP')
-plt.plot(l1, r1[3], label='Matrix exponentiation')
-plt.plot(l1, r1[4], label='Binet formula')
-plt.ylabel('Time (s)')
-plt.xlabel('nth Fibonacci number')
-plt.legend()
-plt.show()
+# plt.plot(l1, r1[0], label='DP')
+# plt.plot(l1, r1[1], label='Iterative')
+# plt.plot(l1, r1[2], label='Optimized DP')
+# plt.plot(l1, r1[3], label='Matrix exponentiation')
+# plt.plot(l1, r1[4], label='Binet formula')
+# plt.ylabel('Time (s)')
+# plt.xlabel('nth Fibonacci number')
+# plt.legend()
+# plt.show()
